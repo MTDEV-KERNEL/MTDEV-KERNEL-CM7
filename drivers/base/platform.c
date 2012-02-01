@@ -633,7 +633,7 @@ static int platform_legacy_suspend(struct device *dev, pm_message_t mesg)
 //Div2-SW2-BSP-SuspendLog, VinceCCTsai+[
 	{
 		ret = pdrv->suspend(pdev, mesg);
-		print_symbol("platform_legacy_suspend: %s\n", (unsigned long)pdrv->suspend);
+//		print_symbol("platform_legacy_suspend: %s\n", (unsigned long)pdrv->suspend);
 	}
 //Div2-SW2-BSP-SuspendLog, VinceCCTsai-]
 
@@ -650,7 +650,7 @@ static int platform_legacy_resume(struct device *dev)
 //Div2-SW2-BSP-SuspendLog, VinceCCTsai+[
 	{
 		ret = pdrv->resume(pdev);
-		print_symbol("platform_legacy_resume: %s\n", (unsigned long)pdrv->resume);
+//		print_symbol("platform_legacy_resume: %s\n", (unsigned long)pdrv->resume);
 	}
 //Div2-SW2-BSP-SuspendLog, VinceCCTsai-]
 
