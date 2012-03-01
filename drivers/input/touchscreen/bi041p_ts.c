@@ -379,7 +379,6 @@ static int bi041p_probe(struct i2c_client *client, const struct i2c_device_id *i
         clear_bit(EV_FF, bi041p.input->keybit);
         clear_bit(EV_FF_STATUS, bi041p.input->keybit);
         clear_bit(EV_PWR, bi041p.input->keybit);
-        set_bit(BTN_TOUCH, bi041p.input->keybit);
         set_bit(KEY_BACK, bi041p.input->keybit);
         set_bit(KEY_MENU, bi041p.input->keybit);
         set_bit(KEY_HOME, bi041p.input->keybit);
