@@ -175,8 +175,8 @@ static int fbx_leds_pwm_probe(struct platform_device *pdev)
     fbx_leds_pwm_dd->leds[FBX_R_LED].name           = "red";
     fbx_leds_pwm_dd->leds[FBX_G_LED].name           = "green";
     fbx_leds_pwm_dd->leds[FBX_CAPS_KEY_LED].name    = "button-backlight";
-    fbx_leds_pwm_dd->pause_lo_ms = 2000;
-    fbx_leds_pwm_dd->pause_hi_ms = 500;
+    fbx_leds_pwm_dd->pause_lo_ms = 4000;
+    fbx_leds_pwm_dd->pause_hi_ms = 100;
     mutex_init(&fbx_leds_pwm_dd->led_state_lock);
    
     mutex_lock(&fbx_leds_pwm_dd->led_state_lock);
